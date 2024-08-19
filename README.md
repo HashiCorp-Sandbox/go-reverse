@@ -14,7 +14,7 @@ import (
     "fmt"
     "log"
 
-    "github.com/hashicorp-sandbox/go-reverse"
+    "github.com/hashicorp-sandbox/go-reverse/reverse"
 )
 
 func main() {
