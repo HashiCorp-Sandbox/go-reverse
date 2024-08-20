@@ -1,6 +1,8 @@
 module github.com/hashicorp-sandbox/go-reverse
 
-go 1.22.6
+go 1.21
+
+toolchain go1.22.6
 
 require github.com/hashicorp/terraform-plugin-framework v1.11.0
 
