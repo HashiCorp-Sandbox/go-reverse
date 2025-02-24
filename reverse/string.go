@@ -3,8 +3,8 @@
 
 package reverse
 
-// ReverseString reverses the characters in a string.
-func ReverseString(s string) string {
+// String the individual characters in types.String.
+func String(s string) string {
 	runes := []rune(s)
 	for i, j := 0, len(runes)-1; i < j; i, j = i+1, j-1 {
 		runes[i], runes[j] = runes[j], runes[i]

@@ -10,8 +10,8 @@ import (
 	"github.com/hashicorp/terraform-plugin-framework/types"
 )
 
-// TestReverseString tests the ReverseString function.
-func TestReverseString(t *testing.T) {
+// TestString tests the String function.
+func TestString(t *testing.T) {
 	t.Parallel()
 
 	tests := []struct {
@@ -26,9 +26,9 @@ func TestReverseString(t *testing.T) {
 	}
 
 	for _, test := range tests {
-		result := tfreverse.ReverseString(test.input)
+		result := tfreverse.String(test.input)
 		if result != test.expected {
-			t.Errorf("ReverseString(%q) = %q; expected %q", test.input.ValueString(), result.ValueString(), test.expected.ValueString())
+			t.Errorf("String(%q) = %q; expected %q", test.input.ValueString(), result.ValueString(), test.expected.ValueString())
 		}
 	}
 }

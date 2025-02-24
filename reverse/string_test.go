@@ -9,8 +9,8 @@ import (
 	"github.com/hashicorp-sandbox/go-reverse/reverse"
 )
 
-// TestReverseString tests the ReverseString function.
-func TestReverseString(t *testing.T) {
+// TestString tests the String function.
+func TestString(t *testing.T) {
 	t.Parallel()
 
 	tests := []struct {
@@ -25,9 +25,9 @@ func TestReverseString(t *testing.T) {
 	}
 
 	for _, test := range tests {
-		result := reverse.ReverseString(test.input)
+		result := reverse.String(test.input)
 		if result != test.expected {
-			t.Errorf("ReverseString(%q) = %q; expected %q", test.input, result, test.expected)
+			t.Errorf("String(%q) = %q; expected %q", test.input, result, test.expected)
 		}
 	}
 }

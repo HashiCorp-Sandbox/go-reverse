@@ -3,7 +3,7 @@
 
 package reverse
 
-// InvertBoolean inverts a boolean value.
-func InvertBoolean(b bool) bool {
+// Bool inverts a boolean value.
+func Bool(b bool) bool {
 	return !b
 }

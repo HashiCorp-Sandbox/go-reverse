@@ -9,8 +9,8 @@ import (
 	"github.com/hashicorp-sandbox/go-reverse/reverse"
 )
 
-// TestInvertBoolean tests the InvertBoolean function.
-func TestInvertBoolean(t *testing.T) {
+// TestBoolean tests the Bool function.
+func TestBoolean(t *testing.T) {
 	t.Parallel()
 
 	tests := []struct {
@@ -22,9 +22,9 @@ func TestInvertBoolean(t *testing.T) {
 	}
 
 	for _, test := range tests {
-		result := reverse.InvertBoolean(test.input)
+		result := reverse.Bool(test.input)
 		if result != test.expected {
-			t.Errorf("InvertBoolean(%v) = %v; expected %v", test.input, result, test.expected)
+			t.Errorf("Boolean(%v) = %v; expected %v", test.input, result, test.expected)
 		}
 	}
 }

@@ -9,8 +9,8 @@ import (
 	"github.com/hashicorp-sandbox/go-reverse/reverse"
 )
 
-// TestReverseSlice tests the ReverseSlice function.
-func TestReverseSlice(t *testing.T) {
+// TestSlice tests the Slice function.
+func TestSlice(t *testing.T) {
 	t.Parallel()
 
 	tests := []struct {
@@ -24,10 +24,10 @@ func TestReverseSlice(t *testing.T) {
 	}
 
 	for _, test := range tests {
-		result := reverse.ReverseSlice(test.input)
+		result := reverse.Slice(test.input)
 		for i, v := range result {
 			if v != test.expected[i] {
-				t.Errorf("ReverseSlice(%v) = %v; expected %v", test.input, result, test.expected)
+				t.Errorf("Slice(%v) = %v; expected %v", test.input, result, test.expected)
 				break
 			}
 		}
