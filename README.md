@@ -18,7 +18,7 @@ import (
 )
 
 func main() {
-    result := reverse.ReverseString("HashiCorp")
+    result := reverse.String("HashiCorp")
     fmt.Println(result)
 }
 ```
@@ -38,7 +38,7 @@ import (
 )
 
 func main() {
-	result := tfreverse.ReverseString(types.StringValue("HashiCorp"))
+	result := tfreverse.String(types.StringValue("HashiCorp"))
 	fmt.Println(result.ValueString())
 }
 ```
