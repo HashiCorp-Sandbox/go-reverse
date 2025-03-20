@@ -3,7 +3,7 @@
 
 package reverse
 
-// String the individual characters in types.String.
+// Reverses the characters in the given string.
 func String(s string) string {
 	runes := []rune(s)
 	for i, j := 0, len(runes)-1; i < j; i, j = i+1, j-1 {
